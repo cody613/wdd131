@@ -32,7 +32,7 @@ hr {
     background-color: #93a8b9;
     height: 1px;
     width: 75%;
-    margin: 15px auto 40px auto
+    margin: 15px auto 40px auto;
 }
 
 #mission-text {
@@ -65,4 +65,23 @@ ol li {
 img {
     width: 25%;
     margin: 0 auto;
+}
+
+#theme-selector {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+body.dark {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark #mission-text p {
+    color: #ffffff;
+}
+
+body.dark .subtitle {
+    color: #66b3ff;
 }

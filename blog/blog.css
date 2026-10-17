@@ -1,0 +1,140 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    padding: 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: "Times New Roman", Times, serif;
+    color: #4a3b32;
+    margin: 30px 0;
+}
+
+nav {
+    border-top: 2px solid #f0e6d2;
+    border-bottom: 2px solid #f0e6d2;
+}
+
+.main-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.main-nav li {
+    padding: 10px 15px;
+}
+
+.main-nav a {
+    color: #c0392b;
+    text-decoration: none;
+}
+
+#book-list {
+    padding: 0 2rem;
+}
+
+.book {
+    padding: 1rem;
+    max-width: 900px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.book p {
+    order: 1;
+    text-align: right;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+.book h2 {
+    order: 2;
+    color: #c0392b;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 20px 0 10px 0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.book img {
+    order: 3;
+    max-width: 100%;
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+}
+
+#desc {
+    order: 4;
+    text-align: left;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    border-top: 2px solid #f0e6d2;
+}
+
+footer p { 
+    margin: 0;
+}
+
+
+@media (min-width: 600px) {
+    .main-nav {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        justify-content: end;
+    }
+
+    .book {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        justify-content: center;
+        column-gap: 40px;
+        position: relative;
+    }
+
+    .book::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 170px;
+        border-left: 2px solid #f0e6d2;
+    }
+    .book p, .book h2, .book img, #desc {
+        order: 0;
+    }
+
+    .book p {
+        grid-column: 1 / 2;
+    }
+
+    .book h2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        margin-top: 0;
+    }
+
+    .book img {
+        grid-column: 2 / 3;
+        grid-row: 2 / 6;
+        margin: 20px auto;
+    }
+
+    #desc {
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;    
+    }
+}

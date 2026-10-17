@@ -49,7 +49,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
 }
-.book p {
+.book-date, .book-age, .book-genre, .book-rating {
     order: 1;
     text-align: right;
     margin: 10px 0;
@@ -113,11 +113,11 @@ footer p {
         left: 170px;
         border-left: 2px solid #f0e6d2;
     }
-    .book p, .book h2, .book img, #desc {
+    .book-date, .book-age, .book-genre, .book-rating, .book h2, .book img, #desc {
         order: 0;
     }
 
-    .book p {
+    .book-date, .book-age, .book-genre, .book-rating {
         grid-column: 1 / 2;
     }
 

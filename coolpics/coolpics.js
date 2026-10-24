@@ -1,23 +1,16 @@
 const menubutton = document.querySelector('.menu-button');
 const navLinks = document.querySelector('.nav-links');
-
-menubutton.addEventListener('click', toggleMenu);
-
-function toggleMenu() {
-    navLinks.classList.toggle('hide');
-}
-
 const gallery = document.querySelector('.gallery');
 const modal = document.querySelector('dialog');
 const modalImage = modal.querySelector('img');
 const closeButton = modal.querySelector('.close-viewer');
 
-gallery.addEventListener('click', openModal);
+function toggleMenu() {
+    navLinks.classList.toggle('hide');
+}
 
 function openModal(e) {
     if (e.target.tagName !== 'IMG') return;
-
-    console.log(e.target);
     
     const img = e.target;
     const src = img.getAttribute('src');
@@ -30,9 +23,13 @@ function openModal(e) {
     modal.showModal();
 }
 
+menubutton.addEventListener('click', toggleMenu);
+
 closeButton.addEventListener('click', () => {
     modal.close();
 });
+
+gallery.addEventListener('click', openModal);
 
 modal.addEventListener('click', (event) => {
     if (event.target === modal) {

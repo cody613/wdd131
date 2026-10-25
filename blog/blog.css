@@ -73,7 +73,7 @@ nav {
     width: 250px;
 }
 
-#desc {
+.desc {
     order: 4;
     text-align: left;
     margin-top: 15px;
@@ -113,7 +113,7 @@ footer p {
         left: 170px;
         border-left: 2px solid #f0e6d2;
     }
-    .book-date, .book-age, .book-genre, .book-rating, .book h2, .book img, #desc {
+    .book-date, .book-age, .book-genre, .book-rating, .book h2, .book img, .desc {
         order: 0;
     }
 
@@ -133,7 +133,7 @@ footer p {
         margin: 20px auto;
     }
 
-    #desc {
+    .desc {
         grid-column: 2 / 3;
         grid-row: 6 / 7;    
     }

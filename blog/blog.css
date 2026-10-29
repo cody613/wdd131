@@ -52,7 +52,7 @@ nav {
 .book-date, .book-age, .book-genre, .book-rating {
     order: 1;
     text-align: right;
-    margin: 10px 0;
+    margin: 10px 10px;
     line-height: 1.2;
 }
 

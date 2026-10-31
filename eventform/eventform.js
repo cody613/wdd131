@@ -28,7 +28,6 @@ function updateDynamicField() {
     dynamicInput.required = false;
     dynamicInput.removeAttribute('minLength');
     dynamicInput.removeAttribute('maxLength');
-
   }
 }
 

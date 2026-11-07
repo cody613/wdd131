@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cody Hewitt" />
+    <meta name="description" content="WDD131 Assignment" />
+    <title>Character Card</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="character.css" />
+    <script src="character.js" defer></script>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Character Card">
+    <meta property="og:description" content="Character Card built with JavaScript Objects.">
+    <meta property="og:url" content="https://cody613.github.io/wdd131/charactercard">
+    <meta property="og:image" content="https://cody613.github.io/wdd131/charactercard/snortleblat.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Character Card">
+    <meta name="twitter:description" content="Character Card built with JavaScript Objects.">
+    <meta name="twitter:image" content="https://cody613.github.io/wdd131/charactercard/snortleblat.webp">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.jpeg">
+</head>
+<body>
+    <main>
+        <div class="card">
+            <img class="image" src="snortleblat.webp" alt="Snortleblat" />
+            <h1 class="name" id="characterName"></h1>
+            <div class="stats">
+                <p><strong>Class:</strong> <span id="characterClass"></span></p>
+                <p><strong>Level:</strong> <span id="characterLevel"></span></p>
+                <p><strong>Health:</strong> <span id="characterHealth"></span></p>
+            </div>
+            <div class="buttons">
+                <button id="attackedBtn">Attacked</button>
+                <button id="levelUpBtn">Level Up</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Cody Hewitt</p>
+    </footer>     
+</body>
+</html>

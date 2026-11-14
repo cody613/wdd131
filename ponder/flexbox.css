@@ -1,24 +1,24 @@
 
 * {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-font-size: 20px;
-max-width: 1280px;
-margin: auto;
-padding: 1em;
+    font-size: 20px;
+    max-width: 1280px;
+    margin: auto;
+    padding: 1em;
 }
 
 img {
-max-width: 100%;
+    max-width: 100%;
 }
 
 .main-nav {
-list-style-type: none;
-display: flex;
-gap: 1em;
-flex-direction: column;
+    list-style-type: none;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
 }
 
 .media-card {
@@ -38,8 +38,8 @@ flex-direction: column;
     flex: 1 1 460px;
 }
 
-hr{
-margin-top: 50px;
+hr {
+    margin-top: 50px;
 }
               
 

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cody Hewitt" />
+    <meta name="description" content="WDD131 Assignment" />
+    <title>RecipeBook</title>
+
+    <link rel="icon" href="/recipes/images/favicon.ico">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="recipes.css" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RecipeBook">
+    <meta property="og:description" content="Recipe book made with flexbox">
+    <meta property="og:url" content="https://cody613.github.io/wdd131/recipes">
+    <meta property="og:images" content="https://cody613.github.io/wdd131/recipes/images/apple-crisp.jpg">
+
+    <meta name="twitter:card" content="Preview Image">
+    <meta name="twitter:title" content="RecipeBook">
+    <meta name="twitter:description" content="Recipe book made with flexbox">
+    <meta name="twitter:image" content="https://cody613.github.io/wdd131/recipes/images/apple-crisp.jpg">
+
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">   
+</head>
+<body>
+    <header class="site-header">
+        <img src="images/recipe-book.png" alt="RecipeBook logo" class="logo">
+        <h1>RecipeBook</h1>
+    </header>
+
+    <main>
+        <form class="search-form" action="#" method="get">
+            <input type="text" placeholder="Find a recipe" aria-label="Find a recipe" />
+            <button type="submit" aria-label="Search">
+                <img src="images/search.svg" alt="search icon">
+            </button>
+        </form>
+
+        <hr>
+
+        <section class="media-card-container">
+            <section class="media-card">
+                <div class="media-card-image">
+                    <img src="images/apple-crisp.jpg" alt="Apple crisp served with vanilla ice cream">
+                </div>
+                <div class="media-card-content">
+                    <span class="tag">dessert</span>
+                    <h2>Apple Crisp</h2>
+                    <span
+                        class="rating"
+                        role="img"
+                        aria-label="Rating: 4 out of 5 stars"
+                    >
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star-empty">☆</span>
+                    </span>
+                    <p class="recipe-description">
+                        This apple crisp recipe is a simple yet delicious fall dessert that's 
+                        great served warm with vanilla ice cream.
+                    </p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+    </footer>     
+</body>
+</html>
